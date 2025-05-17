@@ -44,26 +44,17 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+// import bgImage from "assets/images/bg-presentation.jpg";
 
 function Presentation() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          route: "https://www.creative-tim.com/product/material-kit-react",
-          label: "free download",
-          color: "info",
-        }}
-        sticky
-      />
+      <DefaultNavbar routes={routes} sticky />
       <MKBox
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(https://cdn.mos.cms.futurecdn.net/rUyQ4fJZe9FGmFLSXREMQc-1200-80.png)`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
@@ -83,7 +74,7 @@ function Presentation() {
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Flight For All
             </MKTypography>
             <MKTypography
               variant="body1"
