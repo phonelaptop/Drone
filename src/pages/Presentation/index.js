@@ -31,8 +31,6 @@ import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 // Presentation page sections
 import Counters from "pages/Presentation/sections/Counters";
 import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
 import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 
@@ -54,7 +52,7 @@ function Presentation() {
         minHeight="75vh"
         width="100%"
         sx={{
-          backgroundImage: `url(https://cdn.mos.cms.futurecdn.net/rUyQ4fJZe9FGmFLSXREMQc-1200-80.png)`,
+          backgroundImage: `url(https://www.eduporium.com/media/catalog/product/cache/344839f5026348e9ff213e0be9a4da00/w/i/with_laptop.jpeg)`,
           backgroundSize: "cover",
           backgroundPosition: "top",
           display: "grid",
@@ -62,7 +60,7 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={7} justifyContent="center" >
             <MKTypography
               variant="h1"
               color="white"
@@ -74,7 +72,7 @@ function Presentation() {
                 },
               })}
             >
-              Flight For All
+              Fly For All
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -83,8 +81,7 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Where Innovation takes flight
             </MKTypography>
           </Grid>
         </Container>
@@ -102,8 +99,8 @@ function Presentation() {
       >
         <Counters />
         <Information />
-        <DesignBlocks />
-        <Pages />
+        {/* <DesignBlocks /> */}
+        {/* <Pages /> */}
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
         </Container>
@@ -129,11 +126,6 @@ function Presentation() {
                 icon="precision_manufacturing"
                 title="Plugins"
                 description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
-                  label: "Read more",
-                }}
               />
             </Grid>
             <Grid item xs={12} lg={4}>
@@ -142,11 +134,6 @@ function Presentation() {
                 icon="apps"
                 title="Components"
                 description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
-                action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
-                }}
               />
             </Grid>
           </Grid>
