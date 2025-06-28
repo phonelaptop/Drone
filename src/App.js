@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -22,11 +22,11 @@ import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 
-// Material Kit 2 React themes
+// Fly For All React themes
 import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 
-// Material Kit 2 React routes
+// Fly For All React routes
 import routes from "routes";
 
 export default function App() {
@@ -45,7 +45,14 @@ export default function App() {
       }
 
       if (route.route) {
-        return <Route exact path={route.route} element={route.component} key={route.key} />;
+        return (
+          <Route
+            exact
+            path={route.route}
+            element={route.component}
+            key={route.key}
+          />
+        );
       }
 
       return null;

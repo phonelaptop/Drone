@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -21,11 +21,11 @@ import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-// Material Kit 2 React base styles
+// Fly For All React base styles
 import typography from "assets/theme/base/typography";
 
 function SimpleFooter({ company, links, light }) {
@@ -42,7 +42,11 @@ function SimpleFooter({ company, links, light }) {
         lineHeight={1}
       >
         <Link href={link.href} target="_blank">
-          <MKTypography variant="button" fontWeight="regular" color={light ? "white" : "text"}>
+          <MKTypography
+            variant="button"
+            fontWeight="regular"
+            color={light ? "white" : "text"}
+          >
             {link.name}
           </MKTypography>
         </Link>
@@ -67,14 +71,23 @@ function SimpleFooter({ company, links, light }) {
           fontSize={size.sm}
         >
           &copy; {new Date().getFullYear()}, made with
-          <MKBox fontSize={size.md} color={light ? "white" : "text"} mb={-0.5} mx={0.25}>
+          <MKBox
+            fontSize={size.md}
+            color={light ? "white" : "text"}
+            mb={-0.5}
+            mx={0.25}
+          >
             <Icon color="inherit" fontSize="inherit">
               favorite
             </Icon>
           </MKBox>
           by
           <Link href={href} target="_blank">
-            <MKTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
+            <MKTypography
+              variant="button"
+              fontWeight="medium"
+              color={light ? "white" : "dark"}
+            >
               &nbsp;{name}&nbsp;
             </MKTypography>
           </Link>

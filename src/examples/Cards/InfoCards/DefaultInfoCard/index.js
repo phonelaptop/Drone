@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -19,13 +19,24 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function DefaultInfoCard({ color, icon, title, description, direction, small }) {
+function DefaultInfoCard({
+  color,
+  icon,
+  title,
+  description,
+  direction,
+  small,
+}) {
   return (
-    <MKBox lineHeight={1} p={direction === "center" ? 2 : 0} textAlign={direction}>
+    <MKBox
+      lineHeight={1}
+      p={direction === "center" ? 2 : 0}
+      textAlign={direction}
+    >
       {typeof icon === "string" ? (
         <MKTypography
           display="block"

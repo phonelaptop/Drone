@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -23,7 +23,7 @@ import PropTypes from "prop-types";
 import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
@@ -58,7 +58,12 @@ function CenteredBlogCard({ image, title, description, action }) {
         />
       </MKBox>
       <MKBox p={3} mt={-1} textAlign="center">
-        <MKTypography display="inline" variant="h5" textTransform="capitalize" fontWeight="regular">
+        <MKTypography
+          display="inline"
+          variant="h5"
+          textTransform="capitalize"
+          fontWeight="regular"
+        >
           {title}
         </MKTypography>
         <MKBox mt={1} mb={3}>

@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,7 +17,7 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
@@ -69,8 +69,14 @@ function Contact() {
                     <MKTypography variant="h3" color="white" mb={1}>
                       Contact Information
                     </MKTypography>
-                    <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
-                      Fill up the form and our Team will get back to you within 24 hours.
+                    <MKTypography
+                      variant="body2"
+                      color="white"
+                      opacity={0.8}
+                      mb={3}
+                    >
+                      Fill up the form and our Team will get back to you within
+                      24 hours.
                     </MKTypography>
                     <MKBox display="flex" p={1}>
                       <MKTypography variant="button" color="white">
@@ -118,17 +124,49 @@ function Contact() {
                       </MKTypography>
                     </MKBox>
                     <MKBox mt={3}>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-facebook" style={{ fontSize: "1.25rem" }} />
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                      >
+                        <i
+                          className="fab fa-facebook"
+                          style={{ fontSize: "1.25rem" }}
+                        />
                       </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-twitter" style={{ fontSize: "1.25rem" }} />
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                      >
+                        <i
+                          className="fab fa-twitter"
+                          style={{ fontSize: "1.25rem" }}
+                        />
                       </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-dribbble" style={{ fontSize: "1.25rem" }} />
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                      >
+                        <i
+                          className="fab fa-dribbble"
+                          style={{ fontSize: "1.25rem" }}
+                        />
                       </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-instagram" style={{ fontSize: "1.25rem" }} />
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                      >
+                        <i
+                          className="fab fa-instagram"
+                          style={{ fontSize: "1.25rem" }}
+                        />
                       </MKButton>
                     </MKBox>
                   </MKBox>

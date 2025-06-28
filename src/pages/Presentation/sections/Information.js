@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -17,10 +17,10 @@ Coded by www.creative-tim.com
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
+// Fly For All React examples
 import RotatingCard from "examples/Cards/RotatingCard";
 import RotatingCardFront from "examples/Cards/RotatingCard/RotatingCardFront";
 import RotatingCardBack from "examples/Cards/RotatingCard/RotatingCardBack";
@@ -34,7 +34,14 @@ function Information() {
   return (
     <MKBox component="section" py={6} my={6}>
       <Container>
-        <Grid container item xs={11} spacing={3} alignItems="center" sx={{ mx: "auto" }}>
+        <Grid
+          container
+          item
+          xs={11}
+          spacing={3}
+          alignItems="center"
+          sx={{ mx: "auto" }}
+        >
           <Grid item xs={12} lg={4} sx={{ mx: "auto" }}>
             <RotatingCard>
               <RotatingCardFront

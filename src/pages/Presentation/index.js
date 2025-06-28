@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,12 +18,12 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKSocialButton from "components/MKSocialButton";
 
-// Material Kit 2 React examples
+// Fly For All React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
@@ -35,7 +35,7 @@ import Testimonials from "pages/Presentation/sections/Testimonials";
 import Download from "pages/Presentation/sections/Download";
 
 // Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+import BuiltByDevelopers from     "pages/Presentation/components/BuiltByDevelopers";
 
 // Routes
 import routes from "routes";
@@ -47,7 +47,7 @@ import footerRoutes from "footer.routes";
 function Presentation() {
   return (
     <>
-      <DefaultNavbar routes={routes} sticky />
+      <DefaultNavbar routes={routes} sticky />.  
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -59,17 +59,40 @@ function Presentation() {
           placeItems: "center",
         }}
       >
-        <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+        <Container
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Grid
+            container
+            item
+            xs={12}
+            lg={7}
+            justifyContent="center"
+            mx="auto"
+            sx={{
+              backgroundColor: "rgba(0, 0, 0, 0.7)",
+              backdropFilter: "blur(8px)",
+              borderRadius: 3,
+              padding: { xs: 4, md: 6 },
+              margin: { xs: 2, md: 4 },
+              boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+            }}
+          >
             <MKTypography
               variant="h1"
               color="white"
-              mt={-6}
-              mb={1}
+              mb={3}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
+                textAlign: "center",
+                fontWeight: "bold",
+                textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
               })}
             >
               Fly For All
@@ -78,10 +101,22 @@ function Presentation() {
               variant="body1"
               color="white"
               textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
+              px={{ xs: 2, lg: 4 }}
+              sx={{
+                fontSize: { xs: "1.1rem", md: "1.2rem" },
+                lineHeight: 1.6,
+                opacity: 0.95,
+                textShadow: "1px 1px 2px rgba(0, 0, 0, 0.7)",
+              }}
             >
-              Where Innovation takes flight
+              Team 5951A from Canyon Crest Academy is an award-winning high
+              school aerial drone team dedicated to sharing our passion for
+              flight, coding, and hands-on learning. Through our student-led
+              drone education program, we bring real competition equipment and
+              engaging STEM activities to local schools, libraries, and
+              underserved communities. Our goal is simple: make cutting-edge
+              technology fun, accessible, and help our community discover how
+              exciting aerospace engineering can be.
             </MKTypography>
           </Grid>
         </Container>
@@ -92,7 +127,8 @@ function Presentation() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
-          backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
+          backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
+            rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
@@ -115,7 +151,8 @@ function Presentation() {
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  route:
+                    "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
                   label: "Let's start",
                 }}
               />
@@ -143,7 +180,13 @@ function Presentation() {
         <MKBox pt={18} pb={6}>
           <Container>
             <Grid container spacing={3}>
-              <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
+              <Grid
+                item
+                xs={12}
+                lg={5}
+                ml="auto"
+                sx={{ textAlign: { xs: "center", lg: "left" } }}
+              >
                 <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
                   Thank you for your support!
                 </MKTypography>

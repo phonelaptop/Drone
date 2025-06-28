@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -30,7 +30,10 @@ function TooltipsPopovers() {
     <BaseLayout
       title="Tooltip & Popovers"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/attention-catchers/tooltips-popovers" },
+        {
+          label: "Page Sections",
+          route: "/sections/attention-catchers/tooltips-popovers",
+        },
         { label: "Tooltip & Popovers" },
       ]}
     >

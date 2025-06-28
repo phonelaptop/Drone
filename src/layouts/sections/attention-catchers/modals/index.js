@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -28,7 +28,10 @@ function Modals() {
     <BaseLayout
       title="Modals"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/attention-catchers/modals" },
+        {
+          label: "Page Sections",
+          route: "/sections/attention-catchers/modals",
+        },
         { label: "Modals" },
       ]}
     >

@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -23,7 +23,7 @@ import { Link } from "react-router-dom";
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
@@ -81,7 +81,11 @@ function DefaultNavbarDropdown({
         >
           {name}
         </MKTypography>
-        <MKTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
+        <MKTypography
+          variant="body2"
+          color={light ? "white" : "dark"}
+          ml="auto"
+        >
           <Icon sx={{ fontWeight: "normal", verticalAlign: "middle" }}>
             {collapse && "keyboard_arrow_down"}
           </Icon>

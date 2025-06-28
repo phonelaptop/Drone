@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -21,7 +21,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Card from "@mui/material/Card";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 
 function RotatingCard({ children }) {
@@ -31,7 +31,11 @@ function RotatingCard({ children }) {
   const rotate180 = () => setRotate(true);
 
   return (
-    <MKBox sx={{ perspective: "50rem" }} onMouseEnter={rotate180} onMouseLeave={rotate0}>
+    <MKBox
+      sx={{ perspective: "50rem" }}
+      onMouseEnter={rotate180}
+      onMouseLeave={rotate0}
+    >
       <Card
         sx={{
           backgroundColor: "transparent",

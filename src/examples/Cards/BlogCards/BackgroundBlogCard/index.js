@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -24,7 +24,7 @@ import Card from "@mui/material/Card";
 import MuiLink from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
@@ -48,8 +48,14 @@ function BackgroundBlogCard({ image, title, description, action }) {
   return (
     <Card
       sx={{
-        backgroundImage: ({ palette: { black }, functions: { linearGradient, rgba } }) =>
-          `${linearGradient(rgba(black.main, 0.5), rgba(black.main, 0.5))}, url(${image})`,
+        backgroundImage: ({
+          palette: { black },
+          functions: { linearGradient, rgba },
+        }) =>
+          `${linearGradient(
+            rgba(black.main, 0.5),
+            rgba(black.main, 0.5)
+          )}, url(${image})`,
         backgroundSize: "cover",
       }}
     >

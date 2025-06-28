@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -19,7 +19,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Tooltip from "@mui/material/Tooltip";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
@@ -39,7 +39,8 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
         transition: "transform 200ms ease-out",
 
         "&:hover": {
-          transform: "perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)",
+          transform:
+            "perspective(999px) rotateX(7deg) translate3d(0px, -4px, 5px)",
         },
       }}
       {...rest}
@@ -54,7 +55,13 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
           >
-            <g id="lock-black" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <g
+              id="lock-black"
+              stroke="none"
+              strokeWidth="1"
+              fill="none"
+              fillRule="evenodd"
+            >
               <circle id="Oval" fill="#1F2937" cx="12" cy="12" r="12" />
               <g
                 id="padlock"
@@ -96,7 +103,11 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
             </MKTypography>
           )}
           {count > 0 && (
-            <MKTypography variant="button" fontWeight="regular" color="secondary">
+            <MKTypography
+              variant="button"
+              fontWeight="regular"
+              color="secondary"
+            >
               {count} {count === 1 ? "Example" : "Examples"}
             </MKTypography>
           )}

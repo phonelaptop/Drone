@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -21,7 +21,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Popover from "@mui/material/Popover";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
@@ -43,7 +43,12 @@ function Popovers() {
   const closePopover = () => setPopover(null);
 
   const popoverTemplate = (
-    <Popover open={Boolean(popover)} anchorEl={popover} onClose={closePopover} {...popoverOrigin}>
+    <Popover
+      open={Boolean(popover)}
+      anchorEl={popover}
+      onClose={closePopover}
+      {...popoverOrigin}
+    >
       <MKBox bgColor="white" py={1.5} px={2} lineHeight={0.8}>
         <MKTypography variant="caption" color="text">
           That&apos;s the main thing people are controlled

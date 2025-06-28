@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -19,7 +19,7 @@ import PropTypes from "prop-types";
 // @mui material components
 import Icon from "@mui/material/Icon";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKAvatar from "components/MKAvatar";
 import MKTypography from "components/MKTypography";
@@ -121,7 +121,9 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           display="block"
           variant={image ? "button" : "h6"}
           fontWeight="bold"
-          color={color === "transparent" || color === "light" ? "dark" : "white"}
+          color={
+            color === "transparent" || color === "light" ? "dark" : "white"
+          }
           mb={0.5}
         >
           {name}
@@ -130,7 +132,9 @@ function DefaultReviewCard({ color, image, name, date, review, rating }) {
           variant={image ? "caption" : "button"}
           fontWeight="regular"
           lineHeight={1}
-          color={color === "transparent" || color === "light" ? "text" : "white"}
+          color={
+            color === "transparent" || color === "light" ? "text" : "white"
+          }
           sx={{ display: "flex", alignItems: "center" }}
         >
           <Icon>schedule</Icon>&nbsp;

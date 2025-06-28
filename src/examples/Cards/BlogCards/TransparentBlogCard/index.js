@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-react
@@ -24,7 +24,7 @@ import Card from "@mui/material/Card";
 import Icon from "@mui/material/Icon";
 import MuiLink from "@mui/material/Link";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
@@ -98,7 +98,12 @@ function TransparentBlogCard({ image, title, description, action }) {
             </MKTypography>
           </Link>
         ) : (
-          <MuiLink href={action.route} target="_blank" rel="noreferrer" sx={cardActionStyles}>
+          <MuiLink
+            href={action.route}
+            target="_blank"
+            rel="noreferrer"
+            sx={cardActionStyles}
+          >
             <MKTypography variant="h5" gutterBottom>
               {title}
             </MKTypography>

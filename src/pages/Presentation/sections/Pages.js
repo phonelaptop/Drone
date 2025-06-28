@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
@@ -35,7 +35,12 @@ function Pages() {
   const renderData = data.map(({ image, name, route }) => (
     <Grid item xs={12} md={6} sx={{ mb: { xs: 3, lg: 0 } }} key={name}>
       <Link to={route}>
-        <ExampleCard image={image} name={name} display="grid" minHeight="auto" />
+        <ExampleCard
+          image={image}
+          name={name}
+          display="grid"
+          minHeight="auto"
+        />
       </Link>
     </Grid>
   ));
@@ -80,9 +85,15 @@ function Pages() {
               <MKTypography variant="h3" fontWeight="bold" mb={1}>
                 Presentation Pages for Company, Landing Pages, Blogs and Support
               </MKTypography>
-              <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
-                These is just a small selection of the multiple possibitilies you have. Focus on the
-                business, not on the design.
+              <MKTypography
+                variant="body2"
+                fontWeight="regular"
+                color="secondary"
+                mb={1}
+                pr={2}
+              >
+                These is just a small selection of the multiple possibitilies
+                you have. Focus on the business, not on the design.
               </MKTypography>
             </MKBox>
           </Grid>

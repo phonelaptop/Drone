@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -22,11 +22,31 @@ import PropTypes from "prop-types";
 import MKBoxRoot from "components/MKBox/MKBoxRoot";
 
 const MKBox = forwardRef(
-  ({ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow, ...rest }, ref) => (
+  (
+    {
+      variant,
+      bgColor,
+      color,
+      opacity,
+      borderRadius,
+      shadow,
+      coloredShadow,
+      ...rest
+    },
+    ref
+  ) => (
     <MKBoxRoot
       {...rest}
       ref={ref}
-      ownerState={{ variant, bgColor, color, opacity, borderRadius, shadow, coloredShadow }}
+      ownerState={{
+        variant,
+        bgColor,
+        color,
+        opacity,
+        borderRadius,
+        shadow,
+        coloredShadow,
+      }}
     />
   )
 );

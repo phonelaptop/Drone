@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,7 +18,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 
@@ -49,7 +49,13 @@ function BadgesSimpleRounded() {
               container
               circular
             />
-            <MKBadge badgeContent="error" variant="contained" color="error" container circular />
+            <MKBadge
+              badgeContent="error"
+              variant="contained"
+              color="error"
+              container
+              circular
+            />
             <MKBadge
               badgeContent="warning"
               variant="contained"
@@ -57,9 +63,27 @@ function BadgesSimpleRounded() {
               container
               circular
             />
-            <MKBadge badgeContent="info" variant="contained" color="info" container circular />
-            <MKBadge badgeContent="light" variant="contained" color="light" container circular />
-            <MKBadge badgeContent="dark" variant="contained" color="dark" container circular />
+            <MKBadge
+              badgeContent="info"
+              variant="contained"
+              color="info"
+              container
+              circular
+            />
+            <MKBadge
+              badgeContent="light"
+              variant="contained"
+              color="light"
+              container
+              circular
+            />
+            <MKBadge
+              badgeContent="dark"
+              variant="contained"
+              color="dark"
+              container
+              circular
+            />
           </Stack>
         </Grid>
       </Container>

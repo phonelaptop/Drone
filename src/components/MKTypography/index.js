@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -23,7 +23,16 @@ import MKTypographyRoot from "components/MKTypography/MKTypographyRoot";
 
 const MKTypography = forwardRef(
   (
-    { color, fontWeight, textTransform, verticalAlign, textGradient, opacity, children, ...rest },
+    {
+      color,
+      fontWeight,
+      textTransform,
+      verticalAlign,
+      textGradient,
+      opacity,
+      children,
+      ...rest
+    },
     ref
   ) => (
     <MKTypographyRoot
@@ -69,7 +78,12 @@ MKTypography.propTypes = {
     "white",
   ]),
   fontWeight: PropTypes.oneOf([false, "light", "regular", "medium", "bold"]),
-  textTransform: PropTypes.oneOf(["none", "capitalize", "uppercase", "lowercase"]),
+  textTransform: PropTypes.oneOf([
+    "none",
+    "capitalize",
+    "uppercase",
+    "lowercase",
+  ]),
   verticalAlign: PropTypes.oneOf([
     "unset",
     "baseline",

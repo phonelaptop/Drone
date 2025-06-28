@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,10 +18,10 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 
-// Material Kit 2 React examples
+// Fly For All React examples
 import DefaultCounterCard from "examples/Cards/CounterCards/DefaultCounterCard";
 
 function Counters() {
@@ -38,19 +38,25 @@ function Counters() {
             />
           </Grid>
           <Grid item xs={12} md={4} display="flex">
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, mx: 0 }} />
+            <Divider
+              orientation="vertical"
+              sx={{ display: { xs: "none", md: "block" }, mx: 0 }}
+            />
             <DefaultCounterCard
               count={15}
               suffix="+"
               title="Design Blocks"
               description="Mix the sections, change the colors and unleash your creativity"
             />
-            <Divider orientation="vertical" sx={{ display: { xs: "none", md: "block" }, ml: 0 }} />
+            <Divider
+              orientation="vertical"
+              sx={{ display: { xs: "none", md: "block" }, ml: 0 }}
+            />
           </Grid>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
-              count={4}
-              title="Pages"
+              count={3}
+              title="Members"
               description="Save 3-4 weeks of work when you use our pre-made pages for your website"
             />
           </Grid>

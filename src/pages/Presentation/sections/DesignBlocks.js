@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKBadge from "components/MKBadge";
 import MKTypography from "components/MKTypography";
@@ -39,7 +39,13 @@ function DesignBlocks() {
           <MKTypography variant="h3" fontWeight="bold" mb={1}>
             {title}
           </MKTypography>
-          <MKTypography variant="body2" fontWeight="regular" color="secondary" mb={1} pr={2}>
+          <MKTypography
+            variant="body2"
+            fontWeight="regular"
+            color="secondary"
+            mb={1}
+            pr={2}
+          >
             {description}
           </MKTypography>
         </MKBox>
@@ -49,7 +55,12 @@ function DesignBlocks() {
           {items.map(({ image, name, count, route, pro }) => (
             <Grid item xs={12} md={4} sx={{ mb: 2 }} key={name}>
               <Link to={pro ? "/" : route}>
-                <ExampleCard image={image} name={name} count={count} pro={pro} />
+                <ExampleCard
+                  image={image}
+                  name={name}
+                  count={count}
+                  pro={pro}
+                />
               </Link>
             </Grid>
           ))}
@@ -81,8 +92,8 @@ function DesignBlocks() {
             Huge collection of sections
           </MKTypography>
           <MKTypography variant="body1" color="text">
-            We have created multiple options for you to put together and customise into pixel
-            perfect pages.
+            We have created multiple options for you to put together and
+            customise into pixel perfect pages.
           </MKTypography>
         </Grid>
       </Container>

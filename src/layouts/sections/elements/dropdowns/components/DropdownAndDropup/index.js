@@ -1,6 +1,6 @@
 /*
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -22,7 +22,7 @@ import Icon from "@mui/material/Icon";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKBox from "components/MKBox";
 import MKButton from "components/MKButton";
 
@@ -61,7 +61,11 @@ function DropdownAndDropup() {
             <MKButton variant="gradient" color="info" onClick={openDropdown}>
               Dropdown <Icon sx={dropdownIconStyles}>expand_more</Icon>
             </MKButton>
-            <Menu anchorEl={dropdown} open={Boolean(dropdown)} onClose={closeDropdown}>
+            <Menu
+              anchorEl={dropdown}
+              open={Boolean(dropdown)}
+              onClose={closeDropdown}
+            >
               <MenuItem onClick={closeDropdown}>Action</MenuItem>
               <MenuItem onClick={closeDropdown}>Another action</MenuItem>
               <MenuItem onClick={closeDropdown}>Something else here</MenuItem>

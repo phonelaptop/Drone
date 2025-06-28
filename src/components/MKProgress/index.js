@@ -1,6 +1,6 @@
 /**
 =========================================================
-* Material Kit 2 React - v2.1.0
+* Fly For All React - v2.1.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/material-kit-react
@@ -18,28 +18,30 @@ import { forwardRef } from "react";
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
 
-// Material Kit 2 React components
+// Fly For All React components
 import MKTypography from "components/MKTypography";
 
 // Custom styles for MKProgress
 import MKProgressRoot from "components/MKProgress/MKProgressRoot";
 
-const MKProgress = forwardRef(({ variant, color, value, label, ...rest }, ref) => (
-  <>
-    {label && (
-      <MKTypography variant="button" fontWeight="medium" color="text">
-        {value}%
-      </MKTypography>
-    )}
-    <MKProgressRoot
-      {...rest}
-      ref={ref}
-      variant="determinate"
-      value={value}
-      ownerState={{ color, value, variant }}
-    />
-  </>
-));
+const MKProgress = forwardRef(
+  ({ variant, color, value, label, ...rest }, ref) => (
+    <>
+      {label && (
+        <MKTypography variant="button" fontWeight="medium" color="text">
+          {value}%
+        </MKTypography>
+      )}
+      <MKProgressRoot
+        {...rest}
+        ref={ref}
+        variant="determinate"
+        value={value}
+        ownerState={{ color, value, variant }}
+      />
+    </>
+  )
+);
 
 // Setting default values for the props of MKProgress
 MKProgress.defaultProps = {
