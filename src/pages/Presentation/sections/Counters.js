@@ -28,7 +28,7 @@ function Counters() {
   return (
     <MKBox component="section" py={3}>
       <Container>
-        <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
+        {/* <Grid container item xs={12} lg={9} sx={{ mx: "auto" }}>
           <Grid item xs={12} md={4}>
             <DefaultCounterCard
               count={70}
@@ -60,7 +60,7 @@ function Counters() {
               description="Save 3-4 weeks of work when you use our pre-made pages for your website"
             />
           </Grid>
-        </Grid>
+        </Grid> */}
       </Container>
     </MKBox>
   );
